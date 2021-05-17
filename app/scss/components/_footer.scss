@@ -1,0 +1,52 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: $color-black;
+	padding: 3rem 2rem;
+
+	&__section {
+		flex: 0 1 100%;
+		margin-bottom: 2rem;
+		@media screen and (min-width: $bp-s) {
+			flex: 0 1 calc(50% - 1rem);
+			margin-bottom: 2rem;
+		}
+		@media screen and (min-width: $bp-m) {
+			flex: 0 1 calc(25% - 1rem);
+		}
+	}
+	&__title {
+		@include text-medium;
+		font-size: 0.8rem;
+		margin-bottom: 1rem;
+		color: $color-grey;
+	}
+	&__item {
+		@include text-regular;
+		margin-left: 0.5rem;
+		font-size: 0.7rem;
+		margin-bottom: 0.8rem;
+		color: $color-white;
+		a {
+			text-decoration: none;
+			transition: all 1s ease;
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+	&__icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.fab {
+		font-size: 2rem;
+		transition: all 1s ease;
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}

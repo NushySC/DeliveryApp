@@ -54,35 +54,43 @@ small,
 }
 
 // Tipografía
-// $headlines: 'Rubik', serif;
+$headlines: 'Rubik', serif;
 // TODO:maybe change headlines or text
 $texts: 'Rubik', sans-serif;
 
-// @mixin text-light {
-// 	font-family: $texts;
-// 	font-weight: 300;
-// }
-// @mixin text-regular {
-// 	font-family: $texts;
-// 	font-weight: 400;
-// }
-// @mixin text-bold {
-// 	font-family: $texts;
-// 	font-weight: 700;
-// }
-// @mixin text-extraBold {
-// 	font-family: $texts;
-// 	font-weight: 800;
-// }
-// @mixin title-light {
-// 	font-family: $headlines;
-// 	font-weight: 200;
-// }
-// @mixin title-regular {
-// 	font-family: $headlines;
-// 	font-weight: 400;
-// }
-// @mixin title-bold {
-// 	font-family: $headlines;
-// 	font-weight: 900;
+@mixin text-light {
+	font-family: $texts;
+	font-weight: 300;
+}
+@mixin text-regular {
+	font-family: $texts;
+	font-weight: 400;
+}
+@mixin text-medium {
+	font-family: $texts;
+	font-weight: 500;
+}
+@mixin text-semibold {
+	font-family: $texts;
+	font-weight: 600;
+}
+@mixin text-bold {
+	font-family: $texts;
+	font-weight: 700;
+}
+@mixin text-extrabold {
+	font-family: $texts;
+	font-weight: 800;
+}
+@mixin title-light {
+	font-family: $headlines;
+	font-weight: 200;
+}
+@mixin title-regular {
+	font-family: $headlines;
+	font-weight: 400;
+}
+@mixin title-bold {
+	font-family: $headlines;
+	font-weight: 900;
 }

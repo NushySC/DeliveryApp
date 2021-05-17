@@ -7,10 +7,10 @@
 	width: 100%;
 	transition: all 1s ease;
 	z-index: 9999;
-	background-color: pink;
+	background-color: $color-black;
 	padding: 0 1.5rem 0 0;
 	font-family: sans-serif;
-	color: purple;
+
 	a {
 		padding: 0.5rem;
 	}
@@ -22,22 +22,19 @@
 	&__link {
 		@include text-regular;
 		// margin: 0 0.5rem;
-		color: purple;
+		color: $color-white;
 		font-size: 0.9rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-
-		a:not(.lang) {
-			padding: 1rem;
-			border-bottom: 3px solid transparent;
-			transition: all 1.5s ease;
-			&:hover {
-				color: #ff9b19;
-				border-bottom: 3px solid #ff9b19;
-			}
+		padding: 0.5rem 1rem;
+		border-bottom: 3px solid transparent;
+		transition: all 1.5s ease;
+		&:hover {
+			color: $color-primary;
+			border-bottom: 3px solid $color-primary;
 		}
 	}
 	&__items {
