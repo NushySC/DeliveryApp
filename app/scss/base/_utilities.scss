@@ -1,0 +1,25 @@
+//Breakpoints
+$bp-xxl: 1500px;
+$bp-xl: 1200px;
+$bp-l: 1024px;
+$bp-m: 768px;
+$bp-s: 425px;
+$bp-xs: 325px;
+
+// Reusuable classes
+.justify-c {
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.fifty {
+	width: 50%;
+}
