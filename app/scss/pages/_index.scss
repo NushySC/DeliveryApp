@@ -17,5 +17,8 @@ body {
 	transition: background-color 3s;
 }
 
-footer {
+.section {
+	&__title {
+		color: $color-text;
+	}
 }

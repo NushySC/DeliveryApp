@@ -41,9 +41,10 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		max-width: 11rem;
 	}
 	.fab {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		transition: all 1s ease;
 		&:hover {
 			color: $color-primary;
