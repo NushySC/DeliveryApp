@@ -13,15 +13,18 @@
 
 	<body>
 		<header class="hero">
-			<h1 class="hero__title">¿Tienes un antojo? Pídelo.</h1>
-			<h2 class="hero__subtitle">Busca tu restaurante, cocina o plato favorito.</h2>
+			<div class="hero__right"></div>
+			<div class="hero__left">
+				<h1 class="hero__title">¿Tienes un antojo? Pídelo.</h1>
+				<h2 class="hero__subtitle">Busca tu restaurante, cocina o plato favorito.</h2>
 
-			<div class="search">
-				<input type="search" id="restaurant-search" class="search__input" aria-label="Search restaurants in your area" placeholder="Search restaurants in your area" /><button
-					class="search__button"
-				>
-					Search
-				</button>
+				<div class="search">
+					<input type="search" id="restaurant-search" class="search__input" aria-label="Search restaurants in your area" placeholder="Search restaurants in your area" /><button
+						class="search__button"
+					>
+						Search
+					</button>
+				</div>
 			</div>
 		</header>
 		<nav class="navbar" id="navbar">
@@ -51,97 +54,316 @@
 			</ul>
 		</nav>
 		<main>
-			<section class="section who" id="who">
-				<h2 class="section__title">Top Picks in your neiborhood</h2>
-				<article class="cards">
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever one</p>
-					</div>
+			<section class="categorias">
+				<ol class="categorias__list wrapper">
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?pasta, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Ofertas</p>
+					</li>
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?sushi, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Sushi</p>
+					</li>
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?smoothie, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Bebidas</p>
+					</li>
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?cakes, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Postres</p>
+					</li>
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?alcohol, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Alcohol</p>
+					</li>
+					<li class="categorias__item">
+						<img src="https://source.unsplash.com/featured/?donuts, food" alt="food" class="categorias__image" />
+						<p class="categorias__title">Para los niños</p>
+					</li>
+				</ol>
+			</section>
+			<section class="section who">
+				<div class="wrapper">
+					<h2 class="section__title">¿Tienes prisa?</h2>
+					<article class="cards">
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?hamburger, food" alt="food" class="card__image" />
 
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever two</p>
-					</div>
+							<div class="card__details">
+								<span class="card__tag">Good deal</span>
 
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever three</p>
-					</div>
+								<span class="card__tag">Vegan</span>
 
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever four</p>
-					</div>
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever five</p>
-					</div>
-					<div class="card">
-						<img src="./assets/images/food1.jpg" alt="" />
-						<p>whatever six</p>
-					</div>
+								<div class="card__title">
+									Cool Restaurant
+									<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+								</div>
 
-					<!-- /card-four -->
-				</article>
-
-				<!-- <div class="container"> -->
-				<!-- <article class="main-section">
-						<figure class="main-section__image">
-							<img src="./assets/images/food1.jpg" alt="hero image with food" />
-						</figure>
-						<div class="main-section__text">
-							<div class="main-section__text--title"></div>
-							<div class="main-section__text--subtitle"></div>
-						</div>
-					</article> -->
-				<!-- <article class="main-section">
-						<figure class="main-section__image">
-							<img src="./assets/images/food2.jpg" alt="hero image with food" />
-						</figure>
-						<div class="main-section__text">
-							<div class="main-section__text--title">Toda tu comida favorita en una sola app</div>
-							<div class="main-section__text--subtitle">
-								Descubre restaurante, supermercados y tiendas en donde puedes encontrar tu comida preferida para llevar o directamente en tu domicilio.
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
 							</div>
-						</div>
-					</article> -->
-				<!-- </div> -->
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?dessert, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?coffee, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?steak, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Spicy</span>
+
+								<span class="card__tag">Indian</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?donuts, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Cajun</span>
+
+								<span class="card__tag">Healthy</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+					</article>
+					<p class="more"><span class="fas fa-plus"></span> See more</p>
+				</div>
+			</section>
+			<section class="section who">
+				<div class="wrapper">
+					<h2 class="section__title">Populares cerca de ti</h2>
+					<article class="cards">
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?tacos, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Good deal</span>
+
+								<span class="card__tag">Vegan</span>
+
+								<div class="card__title">
+									Cool Restaurant
+									<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+								</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?salad, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?pasta,food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?spaguetti, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Spicy</span>
+
+								<span class="card__tag">Indian</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?icecream, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Cajun</span>
+
+								<span class="card__tag">Healthy</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+					</article>
+					<p class="more"><span class="fas fa-plus"></span> See more</p>
+				</div>
+			</section>
+			<section class="section who">
+				<div class="wrapper">
+					<h2 class="section__title">Ofertas de hoy</h2>
+					<article class="cards">
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?pizza, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Good deal</span>
+
+								<span class="card__tag">Vegan</span>
+
+								<div class="card__title">
+									Cool Restaurant
+									<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+								</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?fruit, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?pastry, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Vegetarian</span>
+
+								<span class="card__tag">Thai</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?cake, food" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Spicy</span>
+
+								<span class="card__tag">Indian</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+						<a href="restaurant.html" class="card">
+							<img src="https://source.unsplash.com/featured/?cocktail, drink" alt="food" class="card__image" />
+
+							<div class="card__details">
+								<span class="card__tag">Cajun</span>
+
+								<span class="card__tag">Healthy</span>
+
+								<div class="card__title">Lorem ipsum dolor</div>
+
+								<p class="card__price"><span class="fas fa-euro-sign"></span>15-20 euros/persona</p>
+								<p class="card__location"><span class="fas fa-map-marker-alt"></span>Ave.Madrid, 25, 28004, Madrid</p>
+							</div>
+						</a>
+					</article>
+					<p class="more"><span class="fas fa-plus"></span> See more</p>
+				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<div class="footer__section">
-				<p class="footer__title">Acerca de nosotros</p>
-				<ol>
-					<li class="footer__item"><a href="#">Nuestro blog</a></li>
-					<li class="footer__item"><a href="#">Crear cuenta de empresas</a></li>
-					<li class="footer__item"><a href="#">Añade tu restaurante</a></li>
-					<li class="footer__item"><a href="#">Regístrate como repartidor</a></li>
-				</ol>
-			</div>
-			<div class="footer__section">
-				<p class="footer__title">Obtener ayuda</p>
-				<ol>
-					<li class="footer__item"><a href="#">Ver todas la ciudades</a></li>
-					<li class="footer__item"><a href="#">Ver todos los paises</a></li>
-					<li class="footer__item"><a href="#">Restaurantes cercanos</a></li>
-					<li class="footer__item"><a href="#">Ahorra en tu primer pedido</a></li>
-				</ol>
-			</div>
-			<div class="footer__section">
-				<p class="footer__title">Descarga nuestras Apps</p>
-				<ol>
-					<li class="footer__item"><a href="#">Android App</a></li>
-					<li class="footer__item"><a href="#">iPhone App</a></li>
-				</ol>
-			</div>
-			<div class="footer__section">
-				<p class="footer__title">Síguenos en redes sociales</p>
-				<div class="footer__icons">
-					<a href="#"> <span class="fab fa-facebook"></span></a>
-					<a href="#"><span class="fab fa-twitter"></span></a>
-					<a href="#"> <span class="fab fa-instagram"></span></a>
-				</div>
+		<footer>
+			<div class="wrapper">
+				<section class="footer">
+					<div class="footer__section">
+						<p class="footer__title">Acerca de nosotros</p>
+						<ol>
+							<li class="footer__item"><a href="#">Nuestro blog</a></li>
+							<li class="footer__item"><a href="#">Crear cuenta de empresas</a></li>
+							<li class="footer__item"><a href="#">Añade tu restaurante</a></li>
+							<li class="footer__item"><a href="#">Regístrate como repartidor</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Obtener ayuda</p>
+						<ol>
+							<li class="footer__item"><a href="#">Ver todas la ciudades</a></li>
+							<li class="footer__item"><a href="#">Ver todos los paises</a></li>
+							<li class="footer__item"><a href="#">Restaurantes cercanos</a></li>
+							<li class="footer__item"><a href="#">Ahorra en tu primer pedido</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Descarga nuestras Apps</p>
+						<ol>
+							<li class="footer__item"><a href="#">Android App</a></li>
+							<li class="footer__item"><a href="#">iPhone App</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Síguenos en redes sociales</p>
+						<div class="footer__icons">
+							<a href="#"> <span class="fab fa-facebook"></span></a>
+							<a href="#"><span class="fab fa-twitter"></span></a>
+							<a href="#"> <span class="fab fa-instagram"></span></a>
+						</div>
+					</div>
+				</section>
 			</div>
 		</footer>
 		<!-- Scripts -->

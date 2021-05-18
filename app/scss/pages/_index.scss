@@ -12,13 +12,24 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #f8f8f8;
-	color: #ebebd9; /* IE 8 */
+	background-color: $color-white;
+	color: $color-text; /* IE 8 */
 	transition: background-color 3s;
 }
 
+.wrapper {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+main {
+	// margin-top: 2rem;
+}
 .section {
+	margin: 2rem auto;
 	&__title {
 		color: $color-text;
+		font-size: 1.8rem;
+		@include text-medium;
+		margin-bottom: 0.5rem;
 	}
 }

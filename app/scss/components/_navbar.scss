@@ -7,9 +7,10 @@
 	width: 100%;
 	transition: all 1s ease;
 	z-index: 9999;
-	background-color: $color-black;
+	background-color: $color-white;
 	padding: 0 1.5rem 0 0;
 	font-family: sans-serif;
+	height: 2.5rem;
 
 	a {
 		padding: 0.5rem;
@@ -22,7 +23,7 @@
 	&__link {
 		@include text-regular;
 		// margin: 0 0.5rem;
-		color: $color-white;
+		color: $color-text;
 		font-size: 0.9rem;
 		display: flex;
 		flex-direction: row;

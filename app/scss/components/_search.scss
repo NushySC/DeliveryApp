@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 2rem auto;
+	margin: 2rem 0;
 	&__input {
 		height: 2rem;
 		border: none;
@@ -38,6 +38,51 @@
 		}
 		@media screen and (min-width: $bp-m) {
 			height: 3rem;
+			font-size: 1rem;
+		}
+	}
+}
+
+.search-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1rem 0;
+	margin-top: 2.5rem;
+	background-color: $color-grey;
+	&__input {
+		height: 2rem;
+		border: none;
+		border-radius: 0.6rem 0 0 0.6rem;
+		padding: 0 1rem;
+		width: 40%;
+		@media screen and (min-width: $bp-m) {
+			width: 17rem;
+		}
+	}
+	&__button {
+		@include text-medium;
+		background-color: $color-primary;
+		color: $color-white;
+		height: 2rem;
+		width: 6rem;
+		font-size: 0.9rem;
+		border-radius: 0 0.6rem 0.6rem 0;
+		transition: background-color 1.5s ease;
+		cursor: pointer;
+		&:hover,
+		&:focus {
+			background-color: $color-secondary;
+		}
+		&:focus {
+			outline: 1px solid $color-white;
+			border-radius: 0 0.6rem 0.6rem 0;
+			outline-offset: 1px;
+		}
+		&:active {
+			transform: scale(0.99);
+		}
+		@media screen and (min-width: $bp-m) {
 			font-size: 1rem;
 		}
 	}
