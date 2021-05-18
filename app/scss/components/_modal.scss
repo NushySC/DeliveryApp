@@ -1,0 +1,200 @@
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 15vh;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+
+	&__content {
+		position: relative;
+		background-color: $color-white;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		animation-name: fromtop;
+		animation-duration: 0.4s;
+		border-radius: 1rem;
+
+		@media screen and (min-width: $bp-xl) {
+			width: 30%;
+		}
+		@media screen and (min-width: $bp-l) {
+			width: 40%;
+		}
+		@media screen and (min-width: $bp-m) {
+			width: 50%;
+		}
+	}
+	@keyframes fromtop {
+		from {
+			top: -300px;
+			opacity: 0;
+		}
+		to {
+			top: 0;
+			opacity: 1;
+		}
+	}
+	&__header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem 2rem;
+		font-size: 2rem;
+		border-radius: 1rem 1rem 0 0;
+		background-color: $color-primary;
+		color: $color-white;
+	}
+	&__description {
+		@include text-regular;
+		margin: 2rem auto;
+	}
+	&__close {
+		color: $color-white;
+		font-size: 1.5rem;
+		font-weight: bold;
+		&:hover,
+		&:focus {
+			color: $color-black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	&__body {
+		padding: 1rem;
+	}
+	&__image {
+		width: 100%;
+		max-height: 20rem;
+		object-fit: cover;
+	}
+	&__ingredientes {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		label {
+			display: block;
+			width: 100%;
+		}
+		select {
+			width: 100%;
+		}
+		.accordion {
+			background-color: $color-white;
+			color: $color-text;
+			cursor: pointer;
+			padding: 1rem;
+			width: 100%;
+			text-align: left;
+			border: 1px solid #e4e4e4;
+			outline: none;
+			transition: 0.4s;
+			box-shadow: #0000003d 0px 3px 8px;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: $color-primary;
+			@include text-bold;
+		}
+
+		.panel {
+			padding: 0 1rem;
+			background-color: $color-white;
+
+			display: none;
+			overflow: hidden;
+
+			li {
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom: 1px solid #c0c0c0;
+				height: 3rem;
+
+				.minus {
+					width: 1.5rem;
+					height: 1.5rem;
+					border-radius: 50%;
+					background-color: $color-primary;
+				}
+				.plus {
+					width: 1.5rem;
+					height: 1.5rem;
+					border-radius: 50%;
+					background-color: $color-primary;
+				}
+				.count {
+					width: 3rem;
+					height: 1.5em;
+					margin: 0 1rem;
+					border: 1px solid #c7c7c7;
+					@include text-medium;
+					color: $color-text-light;
+					text-align: center;
+				}
+				.amount {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	&__footer {
+		padding: 1rem;
+		background-color: $color-primary;
+		color: $color-white;
+		border-radius: 0 0 1rem 1rem;
+	}
+}
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 25px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #04aa6d; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #04aa6d; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
