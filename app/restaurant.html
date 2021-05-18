@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Food Delivery App" />
+		<meta name="keywords" content="restaurant, food delivery, app" />
+		<title>Food Delivery App</title>
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/styles.min.css" />
+	</head>
+
+	<body>
+		<nav class="navbar" id="navbar">
+			<a href="#"><img src="./assets/images/uber-eats-logo.png" alt="logo" class="logo" /></a>
+
+			<div class="navbar__link toggle">
+				<span class="fas fa-bars"></span>
+			</div>
+
+			<ul class="navbar__items right">
+				<li class="navbar__link">
+					<a href="#who" class="active">Who are we</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#what">What we offer</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#where">Where are we</a>
+				</li>
+
+				<li class="navbar__link">
+					<a href="#contact">Contact</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#social">Follow us</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="search-bar">
+			<input type="search" id="restaurant-search" class="search-bar__input" aria-label="Search restaurants in your area" placeholder="Search restaurants in your area" /><button
+				class="search-bar__button"
+			>
+				Search
+			</button>
+		</section>
+		<header class="hero-restaurant">
+			<div class="hero-restaurant__text">
+				<h1 class="hero-restaurant__title">Restaurante Cool</h1>
+				<h2 class="hero-restaurant__subtitle">Cocina fusión</h2>
+				<p class="hero-restaurant__rating"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span></p>
+			</div>
+		</header>
+		<main>
+			<section class="section">
+				<div class="wrapper">
+					<h2 class="section__title">Entrantes</h2>
+					<article class="cards">
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?hamburger, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegan</span>
+
+									<span class="card-menu__tag">40% off</span>
+								</div>
+								<div class="card-menu__title">Rollitos</div>
+
+								<p class="card-menu__text">
+									Crujientes rollitos rellenos de cebolla, brotes y zanahoria, un toque de curry con una deliciosa salsa de coco y curry verde para dipear. Pura magia.
+								</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?dessert, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+								<div class="card-menu__title">Satay</div>
+
+								<p class="card-menu__text">Brochetas de pollo marinado con jengibre, cúrcuma y servido con salsa de cacahuete. Ouh mama!</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?coffee, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+
+								<div class="card-menu__title">Samosas</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?steak, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Spicy</span>
+
+									<span class="card-menu__tag">Indian</span>
+								</div>
+
+								<div class="card-menu__title">Tallarines con gambas</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?donuts, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Cajun</span>
+
+									<span class="card-menu__tag">Healthy</span>
+								</div>
+
+								<div class="card-menu__title">Dim sum</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<h2 class="section__title">Platos principales</h2>
+					<article class="cards">
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?hamburger, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegan</span>
+
+									<span class="card-menu__tag">40% off</span>
+								</div>
+
+								<div class="card-menu__title">Pad Thai</div>
+
+								<p class="card-menu__text">El plato nacional de Tailandia te va a flipar. Tallarines de arroz, brotes de soja, huevo, cebollino, tamarindo y cacahuete.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?dessert, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+
+								<div class="card-menu__title">Nasi Goreng</div>
+
+								<p class="card-menu__text">Arroz frito salteado con verduras, salsa de soja dulce y acompañado por un huevo frito. Bali en tu paladar.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?coffee, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+
+								<div class="card-menu__title">Money Bag</div>
+
+								<p class="card-menu__text">Arroz frito salteado con verduras, salsa de soja dulce y acompañado por un huevo frito. Bali en tu paladar.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?steak, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Spicy</span>
+
+									<span class="card-menu__tag">Indian</span>
+								</div>
+
+								<div class="card-menu__title">Curry verde</div>
+
+								<p class="card-menu__text">Curry verde tailandés con pollo, albahaca, berenjena, cilantro, azúcar de palma y leche de coco. ¡Incluye arroz jazmín para acompañar!</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?donuts, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Cajun</span>
+
+									<span class="card-menu__tag">Healthy</span>
+								</div>
+
+								<div class="card-menu__title">Pato picante</div>
+
+								<p class="card-menu__text">
+									Tiras de pato frito salteado con un toque de sambal, salsa de soja con jengibre y acompañado de delicioso mango fresco y cebolla encurtida.
+								</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<h2 class="section__title">Postres</h2>
+					<article class="cards">
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?hamburger, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegan</span>
+
+									<span class="card-menu__tag">40% off</span>
+								</div>
+
+								<div class="card-menu__title">Brownie</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?dessert, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+
+								<div class="card-menu__title">Tarta de mango</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?coffee, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Vegetarian</span>
+
+									<span class="card-menu__tag">Thai</span>
+								</div>
+
+								<div class="card-menu__title">Arroz con leche</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?steak, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Spicy</span>
+
+									<span class="card-menu__tag">Indian</span>
+								</div>
+
+								<div class="card-menu__title">Mochis</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+						<div class="card-menu">
+							<img src="https://source.unsplash.com/featured/?donuts, food" alt="food" class="card-menu__image" />
+
+							<div class="card-menu__details">
+								<div class="card-menu__tags">
+									<span class="card-menu__tag">Cajun</span>
+
+									<span class="card-menu__tag">Healthy</span>
+								</div>
+
+								<div class="card-menu__title">Helado de plátano</div>
+
+								<p class="card-menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.</p>
+
+								<button>Add to cart</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="wrapper">
+				<section class="footer">
+					<div class="footer__section">
+						<p class="footer__title">Acerca de nosotros</p>
+						<ol>
+							<li class="footer__item"><a href="#">Nuestro blog</a></li>
+							<li class="footer__item"><a href="#">Crear cuenta de empresas</a></li>
+							<li class="footer__item"><a href="#">Añade tu restaurante</a></li>
+							<li class="footer__item"><a href="#">Regístrate como repartidor</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Obtener ayuda</p>
+						<ol>
+							<li class="footer__item"><a href="#">Ver todas la ciudades</a></li>
+							<li class="footer__item"><a href="#">Ver todos los paises</a></li>
+							<li class="footer__item"><a href="#">Restaurantes cercanos</a></li>
+							<li class="footer__item"><a href="#">Ahorra en tu primer pedido</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Descarga nuestras Apps</p>
+						<ol>
+							<li class="footer__item"><a href="#">Android App</a></li>
+							<li class="footer__item"><a href="#">iPhone App</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Síguenos en redes sociales</p>
+						<div class="footer__icons">
+							<a href="#"> <span class="fab fa-facebook"></span></a>
+							<a href="#"><span class="fab fa-twitter"></span></a>
+							<a href="#"> <span class="fab fa-instagram"></span></a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="https://kit.fontawesome.com/0be298d007.js" crossorigin="anonymous"></script>
+		<script async defer src="assets/js/vendors.min.js?cb=123"></script>
+		<script async defer src="assets/js/app.min.js?cb=123"></script>
+	</body>
+</html>
