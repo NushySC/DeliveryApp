@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Food Delivery App" />
+		<meta name="keywords" content="restaurant, food delivery, app" />
+		<title>Food Delivery App</title>
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/styles.min.css" />
+	</head>
+
+	<body>
+		<nav class="navbar" id="navbar">
+			<a href="./index.html"><img src="./assets/images/uber-eats-logo.png" alt="logo" class="logo" /></a>
+
+			<div class="navbar__link toggle">
+				<span class="fas fa-bars"></span>
+			</div>
+
+			<ul class="navbar__items right">
+				<li class="navbar__link">
+					<a href="./restaurant.html" class="active">Restaurantes</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#footer">Contact</a>
+				</li>
+				<li class="navbar__link">
+					<a href="./profile.html"><span class="fas fa-user profile--desk"></span><span class="profile--mobile">Profile</span></a>
+				</li>
+			</ul>
+		</nav>
+		<main class="push">
+			<section class="section profile wrapper">
+				<div class="profile__summary">
+					<img src="https://i.pravatar.cc/200" alt="user" class="profile__userpic" />
+
+					<p>Lorenam</p>
+					<p>Ipsum Dolor</p>
+					<p class="country">City, Country</p>
+				</div>
+				<form id="profile__form" class="profile__form">
+					<label for="fname">First name</label>
+					<input type="text" id="fname" name="fname" />
+					<label for="lname">Last name</label>
+					<input type="text" id="lname" name="lname" />
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" />
+					<label for="phone">Phone</label>
+					<input type="phone" id="phone" name="phone" />
+					<label for="birthday">Date of Birth</label>
+					<input type="date" id="birthday" name="birthday" />
+					<label for="avatar">Choose a profile picture:</label>
+
+					<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="btn-file" />
+
+					<div class="countries">
+						<label for="countries">Choose your country:</label>
+						<select name="countries" id="countries">
+							<option value="Belgium">Belgium</option>
+							<option value="Bulgaria">Bulgaria</option>
+							<option value="Russia">Russia</option>
+							<option value="Spain">Spain</option>
+							<option value="USA">USA</option>
+							<option value="Venezuela">Venezuela</option>
+						</select>
+					</div>
+					<button type="submit" class="btn-submit">Guardar cambios</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<div class="wrapper">
+				<section class="footer">
+					<div class="footer__section">
+						<p class="footer__title">Acerca de nosotros</p>
+						<ol>
+							<li class="footer__item"><a href="#">Nuestro blog</a></li>
+							<li class="footer__item"><a href="#">Crear cuenta de empresas</a></li>
+							<li class="footer__item"><a href="#">Añade tu restaurante</a></li>
+							<li class="footer__item"><a href="#">Regístrate como repartidor</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Obtener ayuda</p>
+						<ol>
+							<li class="footer__item"><a href="#">Ver todas la ciudades</a></li>
+							<li class="footer__item"><a href="#">Ver todos los paises</a></li>
+							<li class="footer__item"><a href="#">Restaurantes cercanos</a></li>
+							<li class="footer__item"><a href="#">Ahorra en tu primer pedido</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Descarga nuestras Apps</p>
+						<ol>
+							<li class="footer__item"><a href="#">Android App</a></li>
+							<li class="footer__item"><a href="#">iPhone App</a></li>
+						</ol>
+					</div>
+					<div class="footer__section">
+						<p class="footer__title">Síguenos en redes sociales</p>
+						<div class="footer__icons">
+							<a href="#"> <span class="fab fa-facebook"></span></a>
+							<a href="#"><span class="fab fa-twitter"></span></a>
+							<a href="#"> <span class="fab fa-instagram"></span></a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="https://kit.fontawesome.com/0be298d007.js" crossorigin="anonymous"></script>
+		<script async defer src="assets/js/vendors.min.js?cb=123"></script>
+		<script async defer src="assets/js/app.min.js?cb=123"></script>
+	</body>
+</html>

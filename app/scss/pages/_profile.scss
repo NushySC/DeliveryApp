@@ -1,0 +1,101 @@
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 5rem auto 2rem auto;
+	@media screen and (min-width: $bp-m) {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	&__summary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: center;
+		width: 100%;
+		@media screen and (min-width: $bp-m) {
+			width: 30%;
+		}
+		p {
+			margin-bottom: 0.2rem;
+			font-size: 1.5rem;
+			@include text-bold;
+		}
+		.country {
+			@include text-regular;
+			color: $color-grey;
+			font-size: 0.9rem;
+			margin-top: 1rem;
+		}
+	}
+	&__userpic {
+		border-radius: 50%;
+		margin-bottom: 2rem;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		padding: 1rem;
+		@media screen and (min-width: $bp-m) {
+			width: 70%;
+		}
+		label {
+			@include text-light;
+			font-size: 0.875rem;
+			margin-bottom: 0.3rem;
+			color: $color-text;
+		}
+
+		input:not(.btn-file) {
+			margin-bottom: 1rem;
+			min-height: 2rem;
+			width: 20rem;
+			border: thin solid $color-light-grey;
+			padding: 0 0.4rem;
+		}
+
+		.btn-file::-webkit-file-upload-button {
+			color: white;
+			display: inline-block;
+			background: $color-primary;
+			border: none;
+			padding: 0.5rem 1rem;
+			@include text-medium;
+			border-radius: 0.3rem;
+			white-space: nowrap;
+			cursor: pointer;
+			font-size: 0.875rem;
+			transition: background 1s ease;
+			&:hover {
+				background: darken($color-primary, 10);
+			}
+		}
+		.countries {
+			display: flex;
+			flex-direction: column;
+			margin-top: 1rem;
+			select {
+				margin-bottom: 1rem;
+				min-height: 2rem;
+				width: 20rem;
+				border: thin solid $color-light-grey;
+				padding: 0 0.4rem;
+			}
+		}
+		.btn-submit {
+			height: 3rem;
+			padding: 0.5rem 1.5rem;
+			background: $color-primary;
+			color: $color-white;
+			border: none;
+			@include text-medium;
+			border-radius: 0.3rem;
+			transition: background 1s ease;
+			&:hover {
+				background: darken($color-primary, 10);
+			}
+		}
+	}
+}
