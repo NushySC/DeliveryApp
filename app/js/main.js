@@ -1,3 +1,13 @@
+//NAVBAR
+const classToggle = () => {
+	const navs = document.querySelectorAll('.navbar__items');
+
+	navs.forEach((nav) => nav.classList.toggle('navbar__toggleShow'));
+};
+
+document.querySelector('.toggle').addEventListener('click', classToggle);
+
+// MODALS
 let modals = document.getElementsByClassName('modal');
 let modalBtns = document.getElementsByClassName('add-to-cart');
 let closeBtns = document.getElementsByClassName('modal__close');
@@ -50,11 +60,11 @@ for (i = 0; i < acc.length; i++) {
 
 let slider = document.getElementById('spicy-level--slider');
 let output = document.getElementById('spicy-level--value');
-output.innerHTML = 'would you like your food?';
+output.innerHTML = 'Mmm...';
 
 slider.oninput = function () {
 	if (this.value > 80) {
-		output.innerHTML = 'Super spicy';
+		output.innerHTML = 'Super spicy!!';
 	} else if (this.value <= 80 && this.value > 50) {
 		output.innerHTML = 'Medium spicy';
 	} else if (this.value <= 50 && this.value > 10) {
@@ -63,7 +73,8 @@ slider.oninput = function () {
 		output.innerHTML = 'Not spicy';
 	}
 };
-// COUNTER
+
+//COUNTER
 
 // let count = 1;
 // let countEl = document.getElementsByClassName('count');

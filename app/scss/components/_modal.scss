@@ -21,14 +21,11 @@
 		animation-duration: 0.4s;
 		border-radius: 1rem;
 
-		@media screen and (min-width: $bp-xl) {
-			width: 30%;
-		}
-		@media screen and (min-width: $bp-l) {
-			width: 40%;
-		}
 		@media screen and (min-width: $bp-m) {
 			width: 50%;
+		}
+		@media screen and (min-width: $bp-xl) {
+			width: 30%;
 		}
 	}
 	@keyframes fromtop {
@@ -54,7 +51,20 @@
 	}
 	&__description {
 		@include text-regular;
-		margin: 2rem auto;
+		margin: 1rem auto;
+		color: $color-text-light;
+		font-size: 0.875rem;
+		.fa-allergies {
+			color: $color-secondary;
+			margin-right: 0.5rem;
+			font-size: 0.8rem;
+		}
+	}
+	.choose {
+		@include text-medium;
+		margin: 1rem auto;
+		color: $color-text;
+		font-size: 1rem;
 	}
 	&__close {
 		color: $color-white;
@@ -76,10 +86,12 @@
 		max-height: 20rem;
 		object-fit: cover;
 	}
+
 	&__ingredientes {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+
 		label {
 			display: block;
 			width: 100%;
@@ -90,111 +102,168 @@
 		.accordion {
 			background-color: $color-white;
 			color: $color-text;
+			font-size: 0.875rem;
 			cursor: pointer;
-			padding: 1rem;
+			padding: 0.5rem;
 			width: 100%;
 			text-align: left;
 			border: 1px solid #e4e4e4;
 			outline: none;
 			transition: 0.4s;
 			box-shadow: #0000003d 0px 3px 8px;
+			.fas {
+				float: right;
+			}
 		}
 
 		.active,
 		.accordion:hover {
 			background-color: $color-primary;
-			@include text-bold;
+			color: $color-white;
+			@include text-medium;
 		}
+	}
+	.panel {
+		padding: 0 1rem;
+		background-color: $color-white;
 
-		.panel {
-			padding: 0 1rem;
-			background-color: $color-white;
+		display: none;
+		overflow: hidden;
 
-			display: none;
-			overflow: hidden;
+		li {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #c0c0c0;
+			height: 3rem;
 
-			li {
-				list-style: none;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: center;
-				border-bottom: 1px solid #c0c0c0;
-				height: 3rem;
-
-				.minus {
-					width: 1.5rem;
-					height: 1.5rem;
-					border-radius: 50%;
-					background-color: $color-primary;
-				}
-				.plus {
-					width: 1.5rem;
-					height: 1.5rem;
-					border-radius: 50%;
-					background-color: $color-primary;
-				}
-				.count {
-					width: 3rem;
-					height: 1.5em;
-					margin: 0 1rem;
-					border: 1px solid #c7c7c7;
-					@include text-medium;
-					color: $color-text-light;
-					text-align: center;
-				}
-				.amount {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-				}
+			p {
+				@include text-regular;
+				color: $color-text-light;
+				font-size: 0.875rem;
 			}
 		}
+	}
+	.minus {
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		background-color: $color-primary;
+	}
+	.plus {
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		background-color: $color-primary;
+	}
+	.count {
+		width: 3rem;
+		height: 1.5em;
+		margin: 0 1rem;
+		border: 1px solid #c7c7c7;
+		border-radius: 0.3rem;
+		@include text-medium;
+		color: $color-text-light;
+		text-align: center;
+	}
+	.amount {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		// justify-content: center;
+		// margin: 0 auto;
 	}
 
 	&__footer {
 		padding: 1rem;
-		background-color: $color-primary;
-		color: $color-white;
+		background-color: $color-white;
+		color: $color-black;
 		border-radius: 0 0 1rem 1rem;
+	}
+	&__total {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media screen and (min-width: $bp-s) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.price {
+			@include text-bold;
+			margin-left: 0.5rem;
+		}
+		.add-order {
+			background-color: $color-primary;
+			padding: 0.5rem 1.5rem;
+			border-radius: 0.4rem;
+			cursor: pointer;
+			color: $color-white;
+			margin: 1rem auto;
+			width: 100%;
+			@media screen and (min-width: $bp-s) {
+				margin: 1rem auto;
+				width: auto;
+			}
+		}
 	}
 }
 
 .slidecontainer {
-	width: 100%; /* Width of the outside container */
+	width: 100%;
+	margin: 2rem auto;
+}
+.slider-value {
+	font-size: 0.9rem;
+	&--question {
+		@include text-regular;
+		margin-bottom: 1rem;
+		color: $color-text-light;
+		font-size: 0.875rem;
+	}
+	&--answer {
+		@include text-medium;
+		margin: 1rem auto;
+		color: $color-text;
+		font-size: 0.875rem;
+	}
 }
 
-/* The slider itself */
 .slider {
-	-webkit-appearance: none; /* Override default CSS styles */
+	-webkit-appearance: none;
 	appearance: none;
-	width: 100%; /* Full-width */
-	height: 25px; /* Specified height */
-	background: #d3d3d3; /* Grey background */
-	outline: none; /* Remove outline */
-	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	width: 100%;
+	height: 0.5rem;
+	border-radius: 0.4rem;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: 0.2s;
 	transition: opacity 0.2s;
 }
 
-/* Mouse-over effects */
 .slider:hover {
-	opacity: 1; /* Fully shown on mouse-over */
+	opacity: 1;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
+	-webkit-appearance: none;
 	appearance: none;
-	width: 25px; /* Set a specific slider handle width */
-	height: 25px; /* Slider handle height */
-	background: #04aa6d; /* Green background */
-	cursor: pointer; /* Cursor on hover */
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background: #70cf10;
+	cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-	width: 25px; /* Set a specific slider handle width */
-	height: 25px; /* Slider handle height */
-	background: #04aa6d; /* Green background */
-	cursor: pointer; /* Cursor on hover */
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background: #70cf10;
+	cursor: pointer;
 }

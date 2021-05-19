@@ -1,18 +1,120 @@
 <section id="settings-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<button class="close">&times;</button>
-			<h2>Modal Header</h2>
+	<div class="modal__content">
+		<div class="modal__header">
+			<h2>Pad Thai</h2>
+			<button class="modal__close">&times;</button>
 		</div>
-		<div class="modal-body">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic quo et. Numquam eligendi praesentium inventore at. Fuga, voluptates ipsum dignissimos rem placeat eligendi illum iste
-				magni. Totam, omnis nesciunt.
-			</p>
-			<p>Some other text...</p>
+		<div class="modal__body">
+			<img src="./assets/images/food2.jpg" alt="delicious food" class="modal__image" />
+			<p class="modal__description">Especialidad tailandesa con tallarines de arroz, brotes de soja, huevo, cebollino, tamarindo y cacahuete. Contiene gluten, huevo, soja y cacahuetes.</p>
+			<p>Contiene gluten, huevo, soja y cacahuetes.</p>
+
+			<section class="modal__ingredientes">
+				<p for="choose">Elige tus ingredientes</p>
+
+				<button class="accordion">Proteínas</button>
+				<ul class="panel">
+					<li>
+						<p>Ternera</p>
+						<div id="amount">
+							<button type="button" class="minus" onclick="minus()">-</button>
+							<input type="number" value="1" class="count" />
+
+							<button type="button" class="plus" onclick="plus()">+</button>
+						</div>
+					</li>
+
+					<li>
+						<p>Pollo</p>
+						<div id="amount">
+							<button type="button" class="minus" onclick="minus()">-</button>
+							<input type="number" value="1" class="count" />
+
+							<button type="button" class="plus" onclick="plus()">+</button>
+						</div>
+					</li>
+					<li>
+						<p>Gambas</p>
+						<div id="amount">
+							<button type="button" class="minus" onclick="minus()">-</button>
+							<input type="number" value="1" class="count" />
+
+							<button type="button" class="plus" onclick="plus()">+</button>
+						</div>
+					</li>
+					<li>
+						<p>Tofu</p>
+						<div id="amount">
+							<button type="button" class="minus" onclick="minus()">-</button>
+							<input type="number" value="1" class="count" />
+
+							<button type="button" class="plus" onclick="plus()">+</button>
+						</div>
+					</li>
+				</ul>
+
+				<button class="accordion">Vegetales</button>
+				<div class="panel">
+					<ul>
+						<li>
+							<p>Pack Choi</p>
+							<div id="amount">
+								<button type="button" class="minus" onclick="minus()">-</button>
+								<input type="number" value="1" class="count" />
+
+								<button type="button" class="plus" onclick="plus()">+</button>
+							</div>
+						</li>
+						<li>
+							<p>Lechuga</p>
+							<div id="amount">
+								<button type="button" class="minus" onclick="minus()">-</button>
+								<input type="number" value="1" class="count" />
+
+								<button type="button" class="plus" onclick="plus()">+</button>
+							</div>
+						</li>
+						<li>
+							<p>Zanahoria</p>
+							<div id="amount">
+								<button type="button" class="minus" onclick="minus()">-</button>
+								<input type="number" value="1" class="count" />
+
+								<button type="button" class="plus" onclick="plus()">+</button>
+							</div>
+						</li>
+						<li>
+							<p>Repollo</p>
+							<div id="amount">
+								<button type="button" class="minus" onclick="minus()">-</button>
+								<input type="number" value="1" class="count" />
+
+								<button type="button" class="plus" onclick="plus()">+</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<button class="accordion">Salsa</button>
+				<div class="panel">
+					<div class="slidecontainer">
+						<p class="slider-value--question">How spicy would you like your food? <span id="spicy-level--value" class="slider-value--answer"></span></p>
+						<input type="range" min="1" max="100" value="50" class="slider" id="spicy-level--slider" />
+					</div>
+				</div>
+			</section>
 		</div>
-		<div class="modal-footer">
-			<h3>Modal Footer</h3>
+		<div class="modal__footer">
+			<div class="modal__total">
+				<div id="amount">
+					<button type="button" class="minus" onclick="minus()">-</button>
+					<input type="number" value="1" class="count" />
+
+					<button type="button" class="plus" onclick="plus()">+</button>
+				</div>
+				<button class="add-order">Add to cart</button>
+				<p class="total">Total:<span class="price">€45</span></p>
+			</div>
 		</div>
 	</div>
 </section>
