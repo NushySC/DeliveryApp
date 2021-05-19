@@ -64,9 +64,10 @@
 
 	button {
 		border: none;
-		padding: 0.8rem 1rem;
+		padding: 0.6rem 2rem;
 		border-radius: 1.6rem;
-		@include text-bold;
+		@include text-medium;
+		font-size: 0.875rem;
 		background-color: $color-primary;
 		color: $color-white;
 		margin: 0.5rem auto;

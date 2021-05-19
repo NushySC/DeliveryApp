@@ -56,18 +56,18 @@
 }
 .restaurant-info {
 	padding: 1rem;
-	// display: flex;
-	// flex-direction: row;
-	// justify-content: space-between;
-	// flex-wrap: wrap;
-	border-bottom: 1px solid $color-grey;
+
+	text-align: left;
+	border-bottom: 1px solid $color-light-grey;
+	.fas {
+		vertical-align: middle;
+	}
 	p {
-		margin-bottom: 0.8rem;
+		margin-bottom: 0.3rem;
 		@include text-regular;
-		font-size: 0.9rem;
-		line-height: 1.4;
-		// display: inline-block;
-		// margin-right: 1rem;
+
+		color: $color-text-light;
+		font-size: 0.75rem;
 	}
 	span {
 		color: $color-primary;
