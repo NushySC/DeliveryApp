@@ -51,7 +51,7 @@
 		input:not(.btn-file) {
 			margin-bottom: 1rem;
 			min-height: 2rem;
-			width: 20rem;
+			min-width: 18rem;
 			border: thin solid $color-light-grey;
 			padding: 0 0.4rem;
 		}
@@ -79,7 +79,7 @@
 			select {
 				margin-bottom: 1rem;
 				min-height: 2rem;
-				width: 20rem;
+				min-width: 18rem;
 				border: thin solid $color-light-grey;
 				padding: 0 0.4rem;
 			}
@@ -90,11 +90,15 @@
 			background: $color-primary;
 			color: $color-white;
 			border: none;
+			margin: 0 auto;
 			@include text-medium;
 			border-radius: 0.3rem;
 			transition: background 1s ease;
 			&:hover {
 				background: darken($color-primary, 10);
+			}
+			@media screen and (min-width: $bp-m) {
+				margin: 1rem 0;
 			}
 		}
 	}
